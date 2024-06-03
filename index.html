@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yoga redesign website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- humburger -->
+      <div class="hamburger">
+        <i class="fa-solid fa-bars" data-visible="true"></i>
+        <i class="fa-solid fa-close" data-visible="false"></i>
+      </div>
+
+      <!-- desktop menu -->
+      <nav class="container desktop-menu">
+        <!-- left menu -->
+        <ul id="left-menu" class="menus-link">
+          <li><a href="#">Our philosophy</a></li>
+          <li><a href="#">Houses</a></li>
+          <li><a href="#">Map</a></li>
+        </ul>
+        <!-- logo -->
+        <h1>RetreatM5</h1>
+        <!-- right menu -->
+        <ul id="right-menu" class="menus-link">
+          <li><a href="#">Leisure</a></li>
+          <li><a href="#">How to get there</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <!-- mobile menu -->
+      <nav class="mobile-menu" data-visible="false">
+        <div class="navigation">
+          <h1>RetreatM5</h1>
+          <ul class="menus-link">
+            <li><a href="#">Our philosophy</a></li>
+            <li><a href="#">Houses</a></li>
+            <li><a href="#">Map</a></li>
+            <li><a href="#">Leisure</a></li>
+            <li><a href="#">How to get there</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+          <div class="mobile-menu-actions">
+            <a href="#" class="btn-primary">Book a room</a>
+            <a href="#" class="btn-secondary">Write to us</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1>
+          You cannot do Yoga <br />
+          YOGA IS YOUR NATURAL STATE
+        </h1>
+        <button class="btn">Learn More</button>
+      </div>
+    </section>
+    <!-- yoga section -->
+    <section>
+      <div class="container yoga">
+        <div class="content">
+          <h1>YOU CAN ALWAYS CONTROL WHAT GOES ON INSIDE</h1>
+          <p>
+            Donec enim diam vulputate ut. Amet venenatis urna cursus eget nunc
+            scelerisque viverra mauris. Sit amet venenatis urna cursus eget nunc
+            scelerisque.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="info-box">
+          <div class="box">
+            <img src="" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const mobileMenu = document.querySelector(".mobile-menu");
+      const icons = document.querySelectorAll("i");
+
+      hamburger.addEventListener("click", function (event) {
+        const isVisible = mobileMenu.getAttribute("data-visible");
+        if (isVisible == "true") {
+          // qari hiding
+          mobileMenu.setAttribute("data-visible", "false");
+          icons[0].setAttribute("data-visible", "true");
+          icons[1].setAttribute("data-visible", "false");
+        } else if (isVisible == "false") {
+          // soo bandhig showing
+          mobileMenu.setAttribute("data-visible", "true");
+          icons[0].setAttribute("data-visible", "false");
+          icons[1].setAttribute("data-visible", "true");
+        }
+      });
+    </script>
+  </body>
+</html>

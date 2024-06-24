@@ -3,169 +3,451 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yoga redesign website</title>
+    <title>final project</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <!-- git config --global --add safe.directory '*' -->
     <header>
-      <!-- humburger -->
+      <!-- Humburger -->
       <div class="hamburger">
         <i class="fa-solid fa-bars" data-visible="true"></i>
         <i class="fa-solid fa-close" data-visible="false"></i>
       </div>
-
       <!-- desktop menu -->
       <nav class="container desktop-menu">
-        <!-- left menu -->
-        <ul id="left-menu" class="menus-link">
-          <li><a href="#">Our philosophy</a></li>
-          <li><a href="#">Houses</a></li>
-          <li><a href="#">Map</a></li>
-        </ul>
-        <!-- logo -->
-        <h1>RetreatM5</h1>
+        <!-- left menu logo-->
+        <h1>TRAINING <em> STUDIO</em></h1>
         <!-- right menu -->
-        <ul id="right-menu" class="menus-link">
-          <li><a href="#">Leisure</a></li>
-          <li><a href="#">How to get there</a></li>
-          <li><a href="#">Contacts</a></li>
+        <ul class="menus-link">
+          <li>
+            <a href="#" class="active">HOME</a>
+          </li>
+          <li>
+            <a href="#">ABOUT</a>
+          </li>
+          <li>
+            <a href="#">CLASSES</a>
+          </li>
+          <li>
+            <a href="#">SCHEDULES</a>
+          </li>
+          <li>
+            <a href="#">CONTACT</a>
+          </li>
+          <button class="btn">SIGN UP</button>
         </ul>
-      </nav>
-
-      <!-- mobile menu -->
-      <nav class="mobile-menu" data-visible="false">
-        <div class="navigation">
-          <h1>RetreatM5</h1>
-          <ul class="menus-link">
-            <li><a href="#">Our philosophy</a></li>
-            <li><a href="#">Houses</a></li>
-            <li><a href="#">Map</a></li>
-            <li><a href="#">Leisure</a></li>
-            <li><a href="#">How to get there</a></li>
-            <li><a href="#">Contacts</a></li>
-          </ul>
-          <div class="mobile-menu-actions">
-            <a href="#" class="btn-primary">Book a room</a>
-            <a href="#" class="btn-secondary">Write to us</a>
-          </div>
-        </div>
       </nav>
     </header>
-    <!--  -->
-    <section class="hero">
-      <div class="container">
-        <h1>
-          You cannot do Yoga <br />
-          YOGA IS YOUR NATURAL LIFE
-        </h1>
-        <button class="btn">Start now</button>
+    <!-- hero -->
+
+    <div class="Hero">
+      <div class="containers">
+        <p>WORK HARDER, GET STRONGER</p>
+        <h1 class="h1">EASY WITH OUR <em>GYM </em></h1>
+        <button class="btn">BECOME A MEMBER</button>
       </div>
-    </section>
+    </div>
 
-    <!-- yoga section -->
-    <section>
-      <div class="container yoga">
-        <div class="content">
-          <h1>YOU CAN ALWAYS CONTROL WHAT GOES ON INSIDE</h1>
-          <p>
-            Donec enim diam vulputate ut. Amet venenatis urna cursus eget nunc
-            scelerisque viverra mauris. Sit amet venenatis urna cursus eget nunc
-            scelerisque.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- info boxs -->
-
-    <section>
-      <div class="container">
-        <div class="info-boxs">
-          <!-- box 1 -->
-          <div class="box">
-            <img
-              src="https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-chermiti-mohamed-3049225.jpg"
-              alt="box1"
-            />
-            <h1>Why you should go to yoga</h1>
-            <p>
-              Scelerisque eu ultrices vitae auctor eu augue ut lectus. Porta non
-              pulvinar neque laoreet sollicitudin nibh.
-            </p>
-            <div>
-              <button class="btn">View More</button>
-            </div>
-          </div>
-          <!-- box 2 -->
-          <div class="box">
-            <img
-              src="https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-chermiti-mohamed-3049225.jpg"
-              alt="box1"
-            />
-            <h1>Why you should go to yoga</h1>
-            <p>
-              Scelerisque eu ultrices vitae auctor eu augue ut lectus. Porta non
-              pulvinar neque laoreet sollicitudin nibh.
-            </p>
-            <div>
-              <button class="btn">View More</button>
-            </div>
-          </div>
-          <!-- box 3 -->
-          <div class="box">
-            <img
-              src="https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-chermiti-mohamed-3049225.jpg"
-              alt="box1"
-            />
-            <h1>Why you should go to yoga</h1>
-            <p>
-              Scelerisque eu ultrices vitae auctor eu augue ut lectus. Porta non
-              pulvinar neque laoreet sollicitudin nibh.
-            </p>
-            <div>
-              <button class="btn">View More</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- prefect section-->
-
-    <section class="prefect-condition">
-      <div class="container">
-        <h2>Keep your body in perfect condition</h2>
+    <!-- Choose Program -->
+    <div class="choose-program container">
+      <div class="top">
+        <h2>CHOOSE <span>PROGRAM</span></h2>
+        <img
+          src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/line-dec.png"
+          alt="dd"
+        />
         <p>
-          Dignissim diam quis enim lobortis scelerisque fermentum. Ipsum a
-          arcu<br />
-          cursus vitae congue mauris rhoncus. Velit euismod in pellentesque
-          massa<br />
-          placerat duis. Nulla malesuada pellentesque elit eget gravida. Enim
-          sit amet<br />
-          venenatis urna. Venenatis a condimentum vitae sapien pellentesque<br />
-          habitant morbi tristique.
+          Training Studio is free CSS template for gyms and fitness centers. You
+          are <br />allowed to use this layout for your business website.
         </p>
       </div>
-    </section>
+      <div class="bottom">
+        <div class="content">
+          <img
+            src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/features-first-icon.png"
+            alt=""
+          />
+          <div class="intennal-content">
+            <h2>Basic Fitness</h2>
+            <p>
+              Please do not re-distribute this template ZIP file on any template
+              collection website. This is not allowed.
 
-    <section class="yoga-classes">
-      <div class="container yoga-box">
-        <h2>CHOOSE YOUR CLASSES AND START YOUR TRAINING</h2>
-        <button class="btn">Write to us</button>
+              <span>DISCOVER MORE</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="content">
+          <img
+            src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/features-first-icon.png"
+            alt=""
+          />
+          <div class="intennal-content">
+            <h2>New Gym Training</h2>
+            <p>
+              Please do not re-distribute this template ZIP file on any template
+              collection website. This is not allowed.
+
+              <span>DISCOVER MORE</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="content">
+          <img
+            src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/features-first-icon.png"
+            alt=""
+          />
+          <div class="intennal-content">
+            <h2>Basic Muscle Course</h2>
+            <p>
+              Please do not re-distribute this template ZIP file on any template
+              collection website. This is not allowed.
+
+              <span>DISCOVER MORE</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="content">
+          <img
+            src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/features-first-icon.png"
+            alt=""
+          />
+          <div class="intennal-content">
+            <h2>Advanced Muscle Course</h2>
+            <p>
+              Please do not re-distribute this template ZIP file on any template
+              collection website. This is not allowed.
+
+              <span>DISCOVER MORE</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="content">
+          <img
+            src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/features-first-icon.png"
+            alt=""
+          />
+          <div class="intennal-content">
+            <h2>Basic Fitness</h2>
+            <p>
+              Please do not re-distribute this template ZIP file on any template
+              collection website. This is not allowed.
+
+              <span>DISCOVER MORE</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="content">
+          <img
+            src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/features-first-icon.png"
+            alt=""
+          />
+          <div class="intennal-content">
+            <h2>training fifth Yoga Training</h2>
+            <p>
+              Please do not re-distribute this template ZIP file on any template
+              collection website. This is not allowed.
+
+              <span>DISCOVER MORE</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- call action section -->
+
+    <section>
+      <div class="poster">
+        <div class="Khalid">
+          <h1>DON’T <em>THINK</em>, BEGIN <em>TODAY</em>!</h1>
+          <p>
+            Ut consectetur, metus sit amet aliquet placerat, enim est ultricies
+            ligula, sit amet <br />dapibus odio augue eget libero. Morbi tempus
+            mauris a nisi luctus imperdiet.
+          </p>
+          <button class="btn">BECOME A MEMBER</button>
+        </div>
+      </div>
+    </section>
+    <!-- Our Classes -->
+    <section>
+      <div class="ourclass">
+        <h1>OUR CLASSES</h1>
+        <img
+          src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/line-dec.png"
+          alt=""
+        />
+
+        <p>
+          Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed
+          viverra
+          <span> ipsum dolor, ultricies fermentum massa consequat eu.</span>
+        </p>
+      </div>
+      <div class="all">
+        <div class="main">
+          <div class="left">
+            <img
+              src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/tabs-first-icon.png"
+              alt=""
+            />
+            <h4>First Training Class</h4>
+          </div>
+          <div class="left">
+            <img
+              src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/tabs-first-icon.png"
+              alt=""
+            />
+            <h4>First Training Class</h4>
+          </div>
+          <div class="left">
+            <img
+              src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/tabs-first-icon.png"
+              alt=""
+            />
+            <h4>First Training Class</h4>
+          </div>
+          <div class="left">
+            <img
+              src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/tabs-first-icon.png"
+              alt=""
+            />
+            <h4>First Training Class</h4>
+          </div>
+          <div id="btn">
+            <button class="btn">View All Schedules</button>
+          </div>
+        </div>
+        <!-- <button class="btn">VIEW SCHEDULE</button> -->
+
+        <div class="right">
+          <img
+            src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/training-image-01.jpg"
+            alt=""
+          />
+          <h4>First Training Class</h4>
+          <p>
+            Phasellus convallis mauris sed elementum vulputate. Donec posuere
+            leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed
+            vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia
+            gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut,
+            accumsan diam.
+          </p>
+          <div>
+            <button class="btn">VIEW SCHEDULE</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CLASSES SCHEDULE -->
+    <section>
+      <div class="table-section">
+        <div class="ourclass">
+          <h2>CLASSES SCHEDULE</h2>
+          <img
+            src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/line-dec.png"
+            alt=""
+          />
+          <div class="p">
+            <p>
+              Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed
+              viverra <br />ipsum dolor, ultricies fermentum massa consequat eu.
+            </p>
+          </div>
+          <div class="week-days">
+            <ul>
+              <li><span>Moday</span></li>
+              <span>/</span>
+              <li>Tuesday</li>
+              <span>/</span>
+              <li>Wednesday</li>
+              <span>/</span>
+              <li>Thursday</li>
+              <span>/</span>
+              <li>Friday</li>
+            </ul>
+          </div>
+          <div class="table">
+            <table>
+              <tr>
+                <th class="x">Fitness Class</th>
+                <th class="x">10:00AM - 11:30AM</th>
+                <th class="x"></th>
+                <th class="x">William G. Stewart</th>
+              </tr>
+              <tr>
+                <td class="x">Muscle Training</td>
+                <td class="x"></td>
+                <td class="x"></td>
+                <td class="x">Paul D. Newman</td>
+              </tr>
+              <tr>
+                <td class="x">Body Building</td>
+                <td class="x"></td>
+                <td class="x">2:00PM - 3:30PM</td>
+                <td class="x">Boyd C. Harris</td>
+              </tr>
+              <tr>
+                <td class="x">Yoga Training Class</td>
+                <td class="x"></td>
+                <td class="x"></td>
+                <td class="x">Hector T. Daigle</td>
+              </tr>
+            </table>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- EXPERT TRAINERS -->
+    <section>
+      <div class="ourclass">
+        <h1>EXPERT TRAINERS</h1>
+        <img
+          src="https://templatemo.com/templates/templatemo_548_training_studio/assets/images/line-dec.png"
+          alt=""
+        />
+        <p>
+          Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed
+          viverra ipsum dolor, ultricies fermentum massa consequat eu.
+        </p>
+      </div>
+      <div class="grids">
+        <div class="era">
+          <img
+            src="	https://templatemo.com/templates/templatemo_548_training_studio/assets/images/first-trainer.jpg"
+            alt=""
+          />
+          <div class="Era">
+            <a href="#">Strength Trainer</a>
+            <h4>Bret D. Bowers</h4>
+            <p>
+              Bitters cliche tattooed 8-bit distillery mustache. Keytar
+              succulents gluten-free vegan church-key pour-over seitan flannel.
+            </p>
+            <div class="social">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-behance"></i>
+            </div>
+          </div>
+        </div>
+        <div class="era">
+          <img
+            src="	https://templatemo.com/templates/templatemo_548_training_studio/assets/images/second-trainer.jpg"
+            alt=""
+          />
+          <div class="Era">
+            <a href="#">Strength Trainer</a>
+            <h4>Bret D. Bowers</h4>
+            <p>
+              Bitters cliche tattooed 8-bit distillery mustache. Keytar
+              succulents gluten-free vegan church-key pour-over seitan flannel.
+            </p>
+            <div class="social">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-behance"></i>
+            </div>
+          </div>
+        </div>
+        <div class="era">
+          <img
+            src="		https://templatemo.com/templates/templatemo_548_training_studio/assets/images/third-trainer.jpg"
+            alt=""
+          />
+          <div class="Era">
+            <a href="#">Strength Trainer</a>
+            <h4>Bret D. Bowers</h4>
+            <p>
+              Bitters cliche tattooed 8-bit distillery mustache. Keytar
+              succulents gluten-free vegan church-key pour-over seitan flannel.
+            </p>
+            <div class="social">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-behance"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact & map -->
+
+    <div class="Grids">
+      <!-- map -->
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96105.1775649247!2d28.94189769227406!3d41.17191140801874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x409fe02232a852d7%3A0x3a86cad07b1a4ec4!2zU2FyxLF5ZXIvxLBzdGFuYnVs!5e0!3m2!1sen!2str!4v1718049764799!5m2!1sen!2str"
+          width="641"
+          height="700"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div class="contact">
+        <form action="#">
+          <input type="user" placeholder="name" />
+          <input type="email" placeholder="email" />
+          <input type="subject" placeholder="subject" />
+          <textarea name="" id=""></textarea>
+          <button class="btn">SEND ME M!</button>
+        </form>
+      </div>
+    </div>
+    <!-- footer -->
     <footer>
-      <div class="container">
-        <p>&copy; Copyright 2022 Mobirise - All Rights Reserved</p>
-      </div>
+      <p>
+        Copyright © 2024 Training Studio - Designed by
+        <em>TemplateMo</em>
+      </p>
     </footer>
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" data-visible="false">
+      <div class="navigation">
+        <ul class="menus-link">
+          <li>
+            <a href="#">HOME</a>
+          </li>
+          <li>
+            <a href="#">ABOUT</a>
+          </li>
+          <li>
+            <a href="#">CLASSES</a>
+          </li>
+          <li>
+            <a href="#">SCHEDULES</a>
+          </li>
+          <li>
+            <a href="#">CONTACT</a>
+          </li>
+
+          <button class="btn">SIGN UP</button>
+        </ul>
+      </div>
+    </nav>
+
     <script>
       const hamburger = document.querySelector(".hamburger");
       const mobileMenu = document.querySelector(".mobile-menu");
@@ -186,5 +468,10 @@
         }
       });
     </script>
+    <!-- font awsoms -->
+    <!-- <i class="fa-brands fa-facebook-f"></i>
+    <i class="fa-brands fa-behance"></i>
+    <i class="fa-brands fa-linkedin-in"></i> -->
   </body>
 </html>
+<!-- <button class="btn">VIEW SCHEDULE</button> -->
